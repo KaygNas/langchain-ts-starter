@@ -10,7 +10,7 @@
   "scripts": {
     "tsup": "tsup",
     "build": "tsup",
-    "start": "tsx -r dotenv/config src/index.ts",
+    "start": "npm run build && node ./dist",
     "lint": "eslint src",
     "lint:fix": "npm run lint --fix",
     "format": "prettier --write \"**/*.ts\"",
